@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p, h2, h3 {
+  margin: 0;
+}
+
+.primary-button {
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  background: linear-gradient(45deg, #fee930, #ff4040);
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background: linear-gradient(250deg, #ff4040, #fee930);
+}
+
+.primary-button2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 35px;
+  background: linear-gradient(45deg, #30fe4b, #404dff);
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-button2:hover {
+  background: linear-gradient(250deg, #404dff, #30fe4b);
+}
+
+.small {
+  font-size: 20px;
+}
+
+@keyframes multicolorFlash {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: rgb(0, 153, 255);
+  }
+  75% {
+    color: rgb(36, 247, 36);
+  }
+  100% {
+    color: rgb(236, 69, 236);
+  }
+}
+
+.congrats {
+  animation: multicolorFlash 1.5s infinite; /* Puoi regolare la durata e il numero di ripetizioni a tuo piacimento */
+}
